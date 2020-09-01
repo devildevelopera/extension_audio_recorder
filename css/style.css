@@ -1,0 +1,120 @@
+body {
+    background-color:transparent !important;
+}
+
+#plusdiv {
+    padding: 5px;
+}
+
+#bigDiv {
+    padding: 5px;
+}
+
+.small-div-1 {
+    padding: 5px 15px;
+    border-radius: 50px;
+    box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.37);
+    background-color: rgba(242, 242, 242, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-microphone {
+    color: #007bff;
+    font-size: 25px;
+    opacity: 0.5;
+}
+
+.fa-microphone:hover {
+    opacity: 1;
+}
+
+#cancel {
+    color: red;
+    font-size: 25px;
+}
+
+#cancel:hover {
+    color: black;
+}
+
+#save {
+    color: #28a745;
+    font-size: 25px;
+}
+
+#save:hover {
+    color: black;
+}
+
+.timer-div {
+    display: flex;
+    align-items: center;
+}
+
+.timer {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+    font-size: 10px;
+}
+
+@keyframes blinkingText{
+    0%{     color: red;    }
+    49%{    color: red; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: red;    }
+}
+
+.spinner {
+    position:relative;
+    z-index:1;
+}
+
+
+.spinner > #start {
+    font-size:25px;
+    text-align:center;
+    display:block;
+    margin:30% 0;
+}
+
+.small-div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.37);
+    background-color: rgba(242, 242, 242, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner:before{
+    content:'';
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border-top:1.2px solid red;
+    border-right:1px solid transparent;
+    border-bottom:1px solid transparent;
+    border-left:1px solid transparent;
+    position:absolute;
+    z-index:9;
+    animation:rt 1s infinite;
+  }
+
+@keyframes rt{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+

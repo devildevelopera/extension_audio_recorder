@@ -1,0 +1,19 @@
+.main {
+    padding: 15px;
+    width: 225px;
+    text-align: center;
+}
+
+.fa-microphone {
+    color: #007bff;
+    font-size: 30px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#power-button {
+    margin-top: 10px;
+}
